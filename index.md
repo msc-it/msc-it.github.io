@@ -8,6 +8,6 @@ The site is open-source on GitHub and your contributions are more than welcome.
 ## Semester I
 
 1. Computer Simulation & Modelling
-1. Mobile Computing
+1. [Mobile Computing](/mc)
 1. Image Processing
 1. [Data Warehousing & Mining](/dw)
