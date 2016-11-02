@@ -1,0 +1,11 @@
+language: ruby
+
+rvm:
+- 2.2.5
+
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "167d3a0140ed"
+  - COMMIT_AUTHOR_EMAIL: "travis@msc-it.github.io"
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
