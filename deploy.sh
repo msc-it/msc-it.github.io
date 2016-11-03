@@ -7,8 +7,6 @@ TARGET_BRANCH="master"
 function doCompile {
     # Build the stie to an ./out folder
     jekyll build -d ./out
-    # Generate the service worker
-    ./node_modules/gulp/bin/gulp.js generate-sw
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -33,11 +31,15 @@ cd ..
 # Clean out existing contents
 rm -rf out/**/* || exit 0
 
-# Run our compile script
+# Run our compile script - Build jekyll
 doCompile
 
 # Now let's go have some fun with the cloned repo
 cd out
+
+# Generate the service worker
+./node_modules/gulp/bin/gulp.js generate-sw
+
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
