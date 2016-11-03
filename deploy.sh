@@ -4,11 +4,6 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="master"
 
-function doCompile {
-    # Build the stie to an ./out folder
-    jekyll build -d ./out
-}
-
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
     echo "Skipping deploy; just doing a build."
@@ -26,20 +21,12 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO out
 cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-cd ..
 
 # Clean out existing contents
 rm -rf out/**/* || exit 0
 
-# Run our compile script - Build jekyll
-doCompile
-
-# Copy the package.json and the gulp file to out
-cp package.json out/
-cp gulpfile.js out/
-
-# Now let's go have some fun with the cloned repo
-cd out
+# build our site into _dist
+jekyll build -d ./_dist
 
 # Install our dependencies
 npm install
