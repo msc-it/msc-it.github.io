@@ -34,8 +34,15 @@ rm -rf out/**/* || exit 0
 # Run our compile script - Build jekyll
 doCompile
 
+# Copy the package.json and the gulp file to out
+cp package.json out/
+cp gulpfile.js out/
+
 # Now let's go have some fun with the cloned repo
 cd out
+
+# Install our dependencies
+npm install
 
 # Generate the service worker
 ./node_modules/gulp/bin/gulp.js generate-sw
