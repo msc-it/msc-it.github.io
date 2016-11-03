@@ -5,6 +5,7 @@ var swPrecache = require('sw-precache');
 gulp.task('generate-sw', function(callback) {
   swPrecache.write('service-worker.js', {
     staticFileGlobs: ['**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}'],
+    ignoreUrlParametersMatching: [/^node_modules(.)*/],
     navigateFallback: '/'
   }, callback);
 });
