@@ -8,7 +8,7 @@ function doCompile {
     # Build the stie to an ./out folder
     jekyll build -d ./out
     # Generate the service worker
-    ./node_modules/gulp/bin/gulp generate-sw
+    ./node_modules/gulp/bin/gulp.js generate-sw
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
