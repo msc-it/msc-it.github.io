@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/404.html","fcd2a29e40dfe656b6b3c2848c50b285"],["/css/main.css","298212edc0693f87e25f8f166cbbac25"],["/index.html","37b4c130c179f88f4f526a01832e30e4"],["/launcher-icon-2x.png","2f79768ca96374702407a6298df4932a"],["/launcher-icon-3x.png","736b0147fc11af8da471bb95f914757d"],["/launcher-icon-4x.png","46ef95efe8748a5a6cd46d9b69dac7e6"]];
+var precacheConfig = [["/404.html","fcd2a29e40dfe656b6b3c2848c50b285"],["/css/main.css","298212edc0693f87e25f8f166cbbac25"],["/index.html","f7faa146e8746828c1929608af0ade6e"],["/launcher-icon-2x.png","2f79768ca96374702407a6298df4932a"],["/launcher-icon-3x.png","736b0147fc11af8da471bb95f914757d"],["/launcher-icon-4x.png","46ef95efe8748a5a6cd46d9b69dac7e6"]];
 var cacheName = 'sw-precache-v2--' + (self.registration ? self.registration.scope : '');
 
 
@@ -134,7 +134,10 @@ self.addEventListener('install', function(event) {
           Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
             // If we don't have a key matching url in the cache already, add it.
             if (!cachedUrls.has(cacheKey)) {
-              return cache.add(new Request(cacheKey, {credentials: 'same-origin'}));
+              return cache.add(new Request(cacheKey, {
+                credentials: 'same-origin',
+                redirect: 'follow'
+              }));
             }
           })
         );
