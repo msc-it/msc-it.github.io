@@ -2,10 +2,10 @@
 layout: default
 ---
 
-This site has notes for the Mumbai University MSc IT exams and is maintained by two students.
+This site has notes for the MSc IT IDOL (Mumbai University) exams.
 The site is open-source on GitHub and your contributions are more than welcome.
 
-## Semester I
+## Part I
 
 1. Computer Simulation & Modelling
 1. [Mobile Computing](/mc)
