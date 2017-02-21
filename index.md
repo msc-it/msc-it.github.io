@@ -14,5 +14,5 @@ The site is open-source on [GitHub](https://github.com/msc-it) and your contribu
 
 <hr />
 
-**Syllabus:** http://archive.mu.ac.in/myweb_test/MSC-IT-Syllabus.pdf   
+**Syllabus:** [PDF Link](http://archive.mu.ac.in/myweb_test/MSC-IT-Syllabus.pdf)   
 **GitHub Link:** https://github.com/msc-it   
