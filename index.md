@@ -9,6 +9,7 @@ Your contributions are more than welcome.
 
 1. [Image Processing](https://github.com/msc-it/ip-pracs) &middot; [Download](https://github.com/msc-it/ip-pracs/archive/master.zip)
 1. [Speech Recognition](https://github.com/msc-it/sr-pracs) &middot; [Download](https://github.com/msc-it/sr-pracs/archive/master.zip)
+1. [Mobile Computing](https://github.com/msc-it/mc-pracs) &middot; [Download](https://github.com/msc-it/mc-pracs/archive/master.zip)
 
 <hr />
 
