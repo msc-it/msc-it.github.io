@@ -2,8 +2,7 @@
 layout: default
 ---
 
-This site has resources for the MSc IT IDOL (Mumbai University) exams.   
-Your contributions are more than welcome.
+> Links & resources for the MSc IT IDOL (Mumbai University) exams.   
 
 ## Practicals - Part I
 
@@ -16,3 +15,5 @@ Your contributions are more than welcome.
 
 **Syllabus:** [PDF Link](http://archive.mu.ac.in/myweb_test/MSC-IT-Syllabus.pdf)   
 **GitHub Link:** <https://github.com/msc-it>   
+
+_Feel free to contribute by making changes, adding links to resources, etc._
