@@ -14,6 +14,6 @@ layout: default
 <hr />
 
 **Syllabus:** [PDF Link](http://archive.mu.ac.in/myweb_test/MSC-IT-Syllabus.pdf)   
-**GitHub Link:**<sup>1</sup> <https://github.com/msc-it>   
+**GitHub Link:**<sup>*</sup> <https://github.com/msc-it>   
 
-<sup>1</sup> <small>Feel free to contribute by making changes, adding links to resources, etc. from the GitHub link above<small>
+<sup>*</sup> <small>Feel free to contribute by making changes, adding links to resources, etc. using the GitHub link.<small>
